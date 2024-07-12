@@ -33,7 +33,7 @@ const Hireme = () => {
           >
             <p className="leading-7">{Hireme.para}</p>
             <br />
-            <button className="btn bg-dark_primary text-white">
+            <button className="btn bg-dark_primary text-white dark:md:hover:bg-yellow-900">
               {Hireme.btnText}
             </button>
           </div>

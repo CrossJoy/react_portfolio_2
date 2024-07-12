@@ -72,7 +72,7 @@ const Contact = () => {
             ></textarea>
             <button
               className="btn self-start
-            bg-white text-dark_primary"
+            bg-white text-dark_primary dark:md:hover:bg-orange-200"
             >
               Submit
             </button>

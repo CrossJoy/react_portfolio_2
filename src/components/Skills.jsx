@@ -19,13 +19,29 @@ const customStyles = {
     padding: "2rem",
   },
 };
+
+const CategoryDropdown = ({ categories, handleCategorySelect }) => {
+  return (
+    <div className="my-4">
+      <select onChange={(e) => handleCategorySelect(e.target.value)} className="p-2 border rounded">
+        <option value="">All</option>
+        {categories.map((category, index) => (
+          <option key={index} value={category}>
+            {category}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
+};
 Modal.setAppElement("#root");
 
 const Skills = () => {
   const { skills } = content;
   const [modalIsOpen, setIsOpen] = useState(false);
   const [selectSkill, setSelectSkill] = useState(null);
-
+  const [selectedCategory, setSelectedCategory] = useState('');
+  
   function openModal() {
     setIsOpen(true);
   }
@@ -33,6 +49,12 @@ const Skills = () => {
   function closeModal() {
     setIsOpen(false);
   }
+
+  const uniqueCategories = [...new Set(skills.skills_content.flatMap(skill => skill.category))];
+
+  const filteredSkills = selectedCategory
+    ? skills.skills_content.filter(skill => skill.category.includes(selectedCategory))
+    : skills.skills_content;
 
   return (
     <section className="min-h-fit bg-bg_light_primary" id="skills">
@@ -47,28 +69,17 @@ const Skills = () => {
           <h6>{selectSkill?.name}</h6>
         </div>
         <br />
-        <ul className="list-decimal px-4 font-Poppins sm:text-sm text-xs !leading-7">
-          <li>Lorem ipsum dolor sit, amet consectetur adipisicing.</li>
-          <li>Lorem ipsum dolor sit, ame.</li>
-          <li>Lorem ipsum dolor sit, amet consectetur</li>
-          <li>
-            Lorem ipsum dolor sit, amet dolor sit, amet consectetur adipisicing.
-          </li>
-          <li>
-            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ad est
-            beatae quos rem.
-          </li>
-        </ul>
+        <p>{selectSkill?.desc}</p>
         <br />
         <div className="flex justify-end">
-          <button onClick={closeModal} className="btn">
+          <button onClick={closeModal} className="btn dark:md:hover:bg-yellow-900">
             Close
           </button>
         </div>
       </Modal>
 
       {/* content */}
-      <div className="md:container px-5  py-14">
+      <div className="md:container px-5 py-14">
         <h2 className="title" data-aos="fade-down">
           {skills.title}
         </h2>
@@ -76,15 +87,18 @@ const Skills = () => {
           {skills.subtitle}
         </h4>
         <br />
+
+        <CategoryDropdown categories={uniqueCategories} handleCategorySelect={setSelectedCategory} />
+
         <div className="flex flex-wrap gap-4 justify-center">
-          {skills.skills_content.map((skill, i) => (
+          {filteredSkills.map((skill, i) => (
             <div
               key={i}
               data-aos="fade-up"
               data-aos-delay={i * 400}
               className="bg-white sm:cursor-pointer 
                relative group w-full flex items-center
-                gap-5 p-5 max-w-sm rounded-md border-2 border-slate-200"
+                gap-5 p-5 max-w-xs rounded-md border-2 border-slate-200"
             >
               <div>
                 <img

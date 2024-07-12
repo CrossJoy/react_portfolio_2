@@ -1,6 +1,8 @@
 // import content
 import { useEffect } from "react";
 import { content } from "../Content";
+import { TypeAnimation } from "react-type-animation";
+
 const Hero = () => {
   const { hero } = content;
 
@@ -12,7 +14,7 @@ const Hero = () => {
           data-aos-delay="1200"
           className="absolute h-full md:w-4/12 w-8/12 top-0 right-0 bg-primaryLinear bottom-0 -z-10"
         >
-          <h1 className="rotate-90 absolute top-[30%] right-[-15%] text-[#EAF2FA]">
+          <h1 className="rotate-90 absolute top-[40%] right-[-15%] text-[#EAF2FA]">
             {hero.firstName}{" "}
             <span className="text-dark_primary">{hero.LastName}</span>
           </h1>
@@ -20,10 +22,24 @@ const Hero = () => {
 
         {/* first col */}
         <div className="pb-16 px-6 pt-5" data-aos="fade-down">
-          <h2>{hero.title}</h2>
+          <h2 style={{ width: '9em'}}><TypeAnimation
+              sequence={[
+                // Same substring at the start will only be typed once, initially
+                hero.titles.title1,
+                1000,
+                hero.titles.title2,
+                1000,
+                hero.titles.title3,
+                1000,
+                hero.titles.title4,
+                1000,
+              ]}
+              speed={50}
+              repeat={Infinity}
+          /></h2>
           <br />
           <div className="flex justify-end">
-            <button className="btn">{hero.btnText}</button>
+            <button className="btn dark:md:hover:bg-orange-200">{hero.btnText}</button>
           </div>
           <div className="flex flex-col gap-10 mt-10">
             {hero.hero_content.map((content, i) => (
@@ -33,6 +49,7 @@ const Hero = () => {
                 data-aos-delay={i * 300}
                 className={`flex items-center w-80 gap-5
             ${i === 1 && " flex-row-reverse text-right"}  `}
+                style={{ marginTop: "-30px" }}
               >
                 <h3>{content.count}</h3>
                 <p>{content.text}</p>

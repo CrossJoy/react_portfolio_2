@@ -3,10 +3,21 @@ import Hero_person from "./assets/images/Hero/person.png";
 
 import figma from "./assets/images/Skills/figma.png";
 import sketch from "./assets/images/Skills/sketch.png";
+import github from "./assets/images/Skills/github.png";
 import ps from "./assets/images/Skills/ps.png";
+import ai from "./assets/images/Skills/ai.png";
+import pr from "./assets/images/Skills/pr.png";
+import an from "./assets/images/Skills/an.png";
 import reactjs from "./assets/images/Skills/react.png";
 import nodejs from "./assets/images/Skills/node.png";
+import laravel from "./assets/images/Skills/laravel.png";
 import python from "./assets/images/Skills/python.png";
+import godot from "./assets/images/Skills/godot.png";
+import cas from "./assets/images/Skills/cas.png";
+import blender from "./assets/images/Skills/blender.png";
+import fl from "./assets/images/Skills/fl.png";
+import au from "./assets/images/Skills/au.png";
+import zotero from "./assets/images/Skills/zotero.png";
 
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
@@ -58,9 +69,14 @@ export const content = {
     },
   ],
   hero: {
-    title: "Web Developer",
-    firstName: "JOHN",
-    LastName: "ALEX",
+    titles: {
+      title1: 'Game Developer',
+      title2: 'Graphic Designer',
+      title3: 'UI/UX Designer',
+      title4: 'Music Producer',
+    },
+    firstName: "DHAZREEL",
+    LastName: "AIMAN",
     btnText: "Hire Me",
     image: Hero_person,
     hero_content: [
@@ -79,34 +95,116 @@ export const content = {
     subtitle: "MY TOP SKILLS",
     skills_content: [
       {
-        name: "Figma",
-        para: "Lorem ipsum text  dummy",
-        logo: figma,
+        name: "Godot",
+        para: "Game Engine",
+        desc: "Used for developing Games either for .",
+        logo: godot,
+        category: ["Game Development"],
       },
       {
-        name: "Node js",
-        para: "Lorem ipsum text  dummy",
-        logo: nodejs,
+        name: "Blender",
+        para: "3D Modeling Software",
+        desc: "Used for developing Games.",
+        logo: blender,
+        category: ["Game Development", "3D Modelling", "Graphic Design"],
       },
       {
         name: "Adobe Photoshop",
-        para: "Lorem ipsum text  dummy",
+        para: "Raster Graphics Editor",
+        desc: "Has some practical exercise during a multimedia courses. Mostly used for image editing for various purpose. Used together with Adobe Allustrator for T shirt design creation",
         logo: ps,
+        category: ["Game Development", "3D Modelling", "Graphic Design"],
+      },
+      {
+        name: "Adobe Illustrator",
+        para: "Vector Graphics Editor",
+        desc: "Plenty of work created using this software during my studies. Mostly used for designing logos, poster and icons",
+        logo: ai,
+        category: ["Graphic Design", "UI/UX Design"],
+      },
+      {
+        name: "Adobe Premier Pro",
+        para: "Video Editing Software",
+        desc: "Used alot for some projects on editing a presentation and promotional videos",
+        logo: pr,
+        category: ["Video Editing"],
+      },
+      {
+        name: "Adobe Animate",
+        para: "Computer Animation Program",
+        desc: "",
+        logo: an,
+        category: ["Animation", "Graphic Design"],
+      },
+      {
+        name: "Adobe Audition",
+        para: "Digital Audio Workstation",
+        desc: "",
+        logo: au,
+        category: ["Animation", "Video Editing"],
+      },
+      {
+        name: "GitHub",
+        para: "Developer Platform",
+        desc: "My Figma description My Figma description My Figma description My Figma description",
+        logo: github,
+        category: ["Coding", "Web Development"],
+      },
+      {
+        name: "Figma",
+        para: "Collaborative Web Application",
+        desc: "My Figma description My Figma description My Figma description My Figma description",
+        logo: figma,
+        category: ["UI/UX Design", "Web Development"],
+      },
+      {
+        name: "Laravel",
+        para: "PHP-Based Web Framework",
+        desc: "My others description",
+        logo: laravel,
+        category: ["UI/UX Design", "Web Development", "Coding"],
+      },
+      {
+        name: "Node js",
+        para: "JavaScript runtime environment",
+        desc: "My others description",
+        logo: nodejs,
+        category: ["Web Development"],
       },
       {
         name: "React js",
-        para: "Lorem ipsum text  dummy",
+        para: "JavaScript library",
+        desc: "My others description",
         logo: reactjs,
-      },
-      {
-        name: "Sketch",
-        para: "Lorem ipsum text  dummy",
-        logo: sketch,
+        category: ["Coding", "Web Development"],
       },
       {
         name: "Python",
-        para: "Lorem ipsum text  dummy",
+        para: "High-Level Programming Language",
+        desc: "My others description",
         logo: python,
+        category: ["Game Development", "Coding"],
+      },
+      {
+        name: "Clip Studio Paint",
+        para: "Art Studio Software",
+        desc: "My others description",
+        logo: cas,
+        category: ["Misc"],
+      },
+      {
+        name: "FL Studio",
+        para: "Digital Audio Workstation",
+        desc: "My others description",
+        logo: fl,
+        category: ["Music Production"],
+      },
+      {
+        name: "Zotero",
+        para: "Reference Management Software",
+        desc: "My others description",
+        logo: zotero,
+        category: ["Misc"],
       },
     ],
     icon: MdArrowForward,

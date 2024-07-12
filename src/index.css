@@ -36,7 +36,7 @@
     @apply md:text-4xl text-3xl !leading-relaxed font-Paprika;
   }
   h6 {
-    @apply font-Paprika font-bold text-[#253D57] leading-8;
+    @apply font-Paprika font-bold text-[#9c5d38] leading-8;
   }
 
   p {
