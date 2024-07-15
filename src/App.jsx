@@ -27,13 +27,21 @@ const App = () => {
       <Skills />
       <Service />
       <Projects />
-      <Testimonials />
+      {/* <Testimonials /> */}
       <Hireme />
       <Contact />
       <footer className="p-3 text-center">
         <h6 className="mb-3">JOHN ALEX</h6>
         <p>codeaprogram © All CopyRights Reserved 2022</p>
-        <a href="https://www.flaticon.com/free-icons/game-development" title="game development icons">Game development icons created by surang - Flaticon</a>
+        <a href="https://www.flaticon.com/free-icons/game-development" class="text-xs"  title="game development icons">Game development icons created by surang - Flaticon</a>
+        <br/>
+        <a href="https://www.flaticon.com/free-icons/listening-to-music" class="text-xs" title="listening to music icons">Listening to music icons created by howcolour - Flaticon</a>
+        <br/>
+        <a href="https://www.flaticon.com/free-icons/graphic-design" class="text-xs" title="graphic design icons">Graphic design icons created by Freepik - Flaticon</a>
+        <br/>
+        <a href="https://www.flaticon.com/free-icons/video" class="text-xs" title="video icons">Video icons created by Prashanth Rapolu 15 - Flaticon</a>
+        <br/>
+        <a href="https://www.flaticon.com/free-icons/model" class="text-xs" title="model icons">Model icons created by Pixel perfect - Flaticon</a>
       </footer>
     </div>
   );

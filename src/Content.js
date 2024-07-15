@@ -22,6 +22,11 @@ import zotero from "./assets/images/Skills/zotero.png";
 import services_logo1 from "./assets/images/Services/logo1.png";
 import services_logo2 from "./assets/images/Services/logo2.png";
 import services_logo3 from "./assets/images/Services/logo3.png";
+import services_logo4 from "./assets/images/Services/logo4.png";
+import services_logo5 from "./assets/images/Services/logo5.png";
+import services_logo6 from "./assets/images/Services/logo6.png";
+import services_logo7 from "./assets/images/Services/logo7.png";
+import services_logo8 from "./assets/images/Services/logo8.png";
 
 import project1 from "./assets/images/projects/img1.png";
 import project2 from "./assets/images/projects/img2.png";
@@ -97,14 +102,14 @@ export const content = {
       {
         name: "Godot",
         para: "Game Engine",
-        desc: "Used for developing Games either for .",
+        desc: "I used it for developing Games either for .",
         logo: godot,
         category: ["Game Development"],
       },
       {
         name: "Blender",
         para: "3D Modeling Software",
-        desc: "Used for developing Games.",
+        desc: "I used is for creating a 3D Model for rendering, animation and game assets.",
         logo: blender,
         category: ["Game Development", "3D Modelling", "Graphic Design"],
       },
@@ -125,49 +130,49 @@ export const content = {
       {
         name: "Adobe Premier Pro",
         para: "Video Editing Software",
-        desc: "Used alot for some projects on editing a presentation and promotional videos",
+        desc: "I used it alot for some projects on editing a presentation and promotional videos",
         logo: pr,
         category: ["Video Editing"],
       },
       {
         name: "Adobe Animate",
         para: "Computer Animation Program",
-        desc: "",
+        desc: "Used for making simple GIF animation and some build a flash game",
         logo: an,
         category: ["Animation", "Graphic Design"],
       },
       {
         name: "Adobe Audition",
         para: "Digital Audio Workstation",
-        desc: "",
+        desc: "I used for editing audios.",
         logo: au,
         category: ["Animation", "Video Editing"],
       },
       {
         name: "GitHub",
         para: "Developer Platform",
-        desc: "My Figma description My Figma description My Figma description My Figma description",
+        desc: "I offen used for sharing project, collaborate projects with other developer and contribute other project",
         logo: github,
         category: ["Coding", "Web Development"],
       },
       {
         name: "Figma",
         para: "Collaborative Web Application",
-        desc: "My Figma description My Figma description My Figma description My Figma description",
+        desc: "I used for designing a prototype for website and apps is UI/UX",
         logo: figma,
         category: ["UI/UX Design", "Web Development"],
       },
       {
         name: "Laravel",
         para: "PHP-Based Web Framework",
-        desc: "My others description",
+        desc: "I used for building a website that needed a strong logic using php and connect it with SQL",
         logo: laravel,
         category: ["UI/UX Design", "Web Development", "Coding"],
       },
       {
         name: "Node js",
         para: "JavaScript runtime environment",
-        desc: "My others description",
+        desc: "Enviroment that offen used for run a website",
         logo: nodejs,
         category: ["Web Development"],
       },
@@ -181,28 +186,28 @@ export const content = {
       {
         name: "Python",
         para: "High-Level Programming Language",
-        desc: "My others description",
+        desc: "The most frequenly used programming languange used by me",
         logo: python,
         category: ["Game Development", "Coding"],
       },
       {
         name: "Clip Studio Paint",
         para: "Art Studio Software",
-        desc: "My others description",
+        desc: "Offen used for cartoon illustration, comics and some graphic design sketches",
         logo: cas,
         category: ["Misc"],
       },
       {
         name: "FL Studio",
         para: "Digital Audio Workstation",
-        desc: "My others description",
+        desc: "I used it for producing music together with extra plugins like Serum and Vocaloid",
         logo: fl,
         category: ["Music Production"],
       },
       {
         name: "Zotero",
         para: "Reference Management Software",
-        desc: "My others description",
+        desc: "I used it to make references more organize for my report writting",
         logo: zotero,
         category: ["Misc"],
       },
@@ -214,19 +219,44 @@ export const content = {
     subtitle: "WHAT I OFFER",
     service_content: [
       {
+        title: "3D Modeling",
+        para: "Modeling any model based on my expertise and experiences, will provide best service",
+        logo: services_logo4,
+      },
+      {
+        title: "Game Development",
+        para: "Offering service such as designing a game mechanics, gameplays and levels. Some other related service can be offered such as music production and assets design.",
+        logo: services_logo5,
+      },
+      {
+        title: "Music Production",
+        para: "Offering a electronic music production with sufficient assets and tools for advertisement or anything related",
+        logo: services_logo6,
+      },
+      {
         title: "Web Development",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        para: "Offering a service on building a website that used Laravel, React js and Tailwind CSS",
         logo: services_logo1,
       },
       {
         title: "ui / ux DESIGNING",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        para: "Offering a service on designing the UI/UX, choosing color scheme and wireframe of a website using figma",
         logo: services_logo2,
       },
       {
         title: "PhotoShop Editing",
-        para: "In publishing and graphic design, Lorem ipsum is a placeholder text commonly used to demonstrate the visual form of a document elying on mean",
+        para: "Offering a editing images service.",
         logo: services_logo3,
+      },
+      {
+        title: "Graphic Designing",
+        para: "Offering a service on designing logos, poster and shirt design .",
+        logo: services_logo7,
+      },
+      {
+        title: "Video Editing",
+        para: "Offering a on editing video.",
+        logo: services_logo8,
       },
     ],
   },
@@ -238,14 +268,114 @@ export const content = {
       {
         title: "Gym Website",
         image: project1,
+        description: "A modern gym website with a clean design.",
+        link: "",
+        images: [project1, project1, project1], // Array of images for the slider
+        categories: ["Web Development", "Design"]
       },
       {
-        title: "Social Media web",
+        title: "Social Media Web",
         image: project2,
+        description: "A social media platform for connecting with friends.",
+        link: "https://socialmediaweb.com",
+        images: [project2, project2, project2],
+        categories: ["Web Development", "Social Media"]
       },
       {
         title: "Creative Website",
         image: project3,
+        description: "A creative portfolio website for showcasing work.",
+        link: "https://creativewebsite.com",
+        images: [project3, project3, project3],
+        categories: ["Design", "Portfolio"]
+      },
+      {
+        title: "Creative Website",
+        image: project3,
+        description: "A creative portfolio website for showcasing work.",
+        link: "https://creativewebsite.com",
+        images: [project3, project3, project3],
+        categories: ["Design", "Portfolio"]
+      },
+      {
+        title: "Creative Website",
+        image: project3,
+        description: "A creative portfolio website for showcasing work.",
+        link: "https://creativewebsite.com",
+        images: [project3, project3, project3],
+        categories: ["Design", "Portfolio"]
+      },
+      {
+        title: "Creative Website",
+        image: project3,
+        description: "A creative portfolio website for showcasing work.",
+        link: "https://creativewebsite.com",
+        images: [project3, project3, project3],
+        categories: ["Design", "Portfolio"]
+      },
+      {
+        title: "Creative Website",
+        image: project3,
+        description: "A creative portfolio website for showcasing work.",
+        link: "https://creativewebsite.com",
+        images: [project3, project3, project3],
+        categories: ["Design", "Portfolio"]
+      },
+      {
+        title: "Creative Website",
+        image: project3,
+        description: "A creative portfolio website for showcasing work.",
+        link: "https://creativewebsite.com",
+        images: [project3, project3, project3],
+        categories: ["Design", "Portfolio"]
+      },
+      {
+        title: "Creative Website",
+        image: project3,
+        description: "A creative portfolio website for showcasing work.",
+        link: "https://creativewebsite.com",
+        images: [project3, project3, project3],
+        categories: ["Design", "Portfolio"]
+      },
+      {
+        title: "Creative Website",
+        image: project3,
+        description: "A creative portfolio website for showcasing work.",
+        link: "https://creativewebsite.com",
+        images: [project3, project3, project3],
+        categories: ["Design", "Portfolio"]
+      },
+      {
+        title: "Creative Website",
+        image: project3,
+        description: "A creative portfolio website for showcasing work.",
+        link: "https://creativewebsite.com",
+        images: [project3, project3, project3],
+        categories: ["Design", "Portfolio"]
+      },
+      {
+        title: "Creative Website",
+        image: project3,
+        description: "A creative portfolio website for showcasing work.",
+        link: "https://creativewebsite.com",
+        images: [project3, project3, project3],
+        categories: ["Design", "Portfolio"]
+      },
+      {
+        title: "Creative Website",
+        image: project3,
+        description: "A creative portfolio website for showcasing work.",
+        link: "https://creativewebsite.com",
+        images: [project3, project3, project3],
+        categories: ["Design", "Portfolio"]
+      },
+      {
+        title: "Creative Website",
+        image: project3,
+        description: "A creative portfolio website for showcasing work.",
+        link: "https://creativewebsite.com",
+        images: [project3, project3, project3],
+        categories: ["Design", "Portfolio"]
       },
     ],
   },
